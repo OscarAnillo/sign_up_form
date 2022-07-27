@@ -29,9 +29,8 @@ export default function ButtonForm(){
     const { firstName, lastName, email, password } = userInput;
     return (
         <div className='container'>
-            <button className='blue-btn'><span>Try it free 7 days</span> then <br />
-            $20/mo. thereafter</button>
-            <form onSubmit={submitHandler}>
+            <button className='blue-btn'><p>Try it free 7 days</p><span> then $20/mo. thereafter</span></button>
+            <form onSubmit={submitHandler} autoComplete="off">
                 <input type="text" placeholder="First Name" name='firstName' value={firstName} onChange={changeHandler} />
                 <input type="text" placeholder="Last Name" name='lastName' value={lastName} onChange={changeHandler}/>
                 <input type="email" placeholder="Email Address" name='email' value={email} onChange={changeHandler}/>

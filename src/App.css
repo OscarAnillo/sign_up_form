@@ -41,14 +41,21 @@
   background: hsl(248, 32%, 49%);
   box-shadow: 2px 4px 9px #333;
   color: #fff;
-  padding: 2em;
+  padding: 1.5em;
   width: 100%;
 }
 
-.blue-btn span {
+.blue-btn p {
+  display: inline-block;
+  padding: 0;
+  width: 100%;
   font-weight: 700;
-  font-size: 1rem;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+}
+
+.blue-btn span {
+  display: inline-block;
+  width: 48%;
 }
 
 .container form {
@@ -67,13 +74,12 @@
   border-bottom: 1px solid #b7b6b6;
   margin: .5em 0;
   outline: none;
-  padding: 1em 0;
+  padding: 1em .5em;
 }
 
 .container form input::placeholder {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  padding: 0 1em;
 }
 
 .container form p {
@@ -108,4 +114,41 @@
   .App {
     background-image: url("/public/bg-intro-desktop.png");
   }
- }
+  
+  .container {
+    text-align: left;
+    margin: 10em 0;
+  }
+
+  .container h2 {
+    width: 60%;
+    margin: 0;
+    font-size: 1.9rem;
+  }
+  .row {
+    width: 90%;
+    max-width: 960px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+  }
+  .row > div {
+    width: 100%;
+  }
+  .blue-btn {
+    padding: 1.5em;
+  }
+  .blue-btn p {
+    width: 40%;
+    padding: 0;
+    margin: 0;
+    
+  }
+
+  .blue-btn span {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    
+  }   
+}
